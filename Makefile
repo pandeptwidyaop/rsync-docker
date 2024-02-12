@@ -1,5 +1,5 @@
 build:
-	docker build -t pandeptwidyaop/docker-rysnc .
+	docker build -t pandeptwidyaop/docker-rsync .
 push:
-	docker push pandeptwidyaop/docker-rysnc
+	docker push pandeptwidyaop/docker-rsync
 all: build push
