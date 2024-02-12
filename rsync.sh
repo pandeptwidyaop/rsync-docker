@@ -39,7 +39,7 @@ echo "Preparation steps completed."
 if [ "$RSYNC_CRONTAB" != "" ]; then
     # run as a cron job, start the cron daemon
     echo "Starting the cron daemon..."
-    crond -f
+    supercronic /rsync/crontab
 else
     # one time run
     echo "Executing rsync as an one time run..."
